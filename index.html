@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo"></div>
+        <div class="logo">Guilherme Segatto</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#link1">Sobre</a></li>
@@ -18,6 +18,39 @@
             </ul>
         </div>
     </nav>
+    <nav id="nav-hamburguer">
+        <div class="logo">Guilherme Segatto</div>
+        <div class="hamburguer-menu">
+            <div class="icon-hamburguer" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#link1" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#link2" onclick="toggleMenu()">Experiencia</a></li>
+                <li><a href="#link3" onclick="toggleMenu()">Projetos</a></li>
+            </div>
+        </div> 
+    </nav>
+    <section id="perfil">
+            <div class="section-containerLogo">
+                <img src="imgs/Logo.svg/1.svg" alt="Logo Guilherme Segatto Desenvolvedor de Sistemas e Web Sites">
+            </div>
+            <div class="section-containerTexto">
+                <p class="texto-p1">Olá, eu sou o</p>
+                <h1 class="titulo">Guilherme!</h1>
+                <p class="texto-p2">Desenvolvedor de Sistemas e Websites.</p>
+                <div class="btn-container">
+                    <button id="btn1" onclick="window.open('./imgs/curriculo-guilherme-ferreira-segatto.pdf')">Download CV</button>
+                    <button id="btn2" onclick="location.href='./#link1'">Conheça-me</button>
+                </div>
+                <div id="social-container">
+                    <img src="./imgs/SocialImg/linkedin.png" alt="Perfil linkedin" class="icon" onclick="location.href='https://linkedin.com/in/guilhermesegatto'">
+                    <img src="./imgs/SocialImg/github.png" alt="Perfil github" class="icon" onclick="location.href='https://github.com/GuilhermeSegattoo'">
+                </div>
+            </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
