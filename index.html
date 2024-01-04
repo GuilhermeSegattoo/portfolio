@@ -12,9 +12,10 @@
         <div class="logo">Guilherme Segatto</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#link1">Sobre</a></li>
-                <li><a href="#link2">Experiencia</a></li>
-                <li><a href="#link3">Projetos</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Experiencia">Experiência</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
     </nav>
@@ -30,6 +31,7 @@
                 <li><a href="#link1" onclick="toggleMenu()">Sobre</a></li>
                 <li><a href="#link2" onclick="toggleMenu()">Experiencia</a></li>
                 <li><a href="#link3" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#link4" onclick="toggleMenu()">Contato</a></li>
             </div>
         </div> 
     </nav>
@@ -43,13 +45,42 @@
                 <p class="texto-p2">Desenvolvedor de Sistemas e Websites.</p>
                 <div class="btn-container">
                     <button id="btn1" onclick="window.open('./imgs/curriculo-guilherme-ferreira-segatto.pdf')">Download CV</button>
-                    <button id="btn2" onclick="location.href='./#link1'">Conheça-me</button>
+                    <button id="btn2" onclick="location.href='./#contato'">Fale comigo!</button>
                 </div>
                 <div id="social-container">
                     <img src="./imgs/SocialImg/linkedin.png" alt="Perfil linkedin" class="icon" onclick="location.href='https://linkedin.com/in/guilhermesegatto'">
                     <img src="./imgs/SocialImg/github.png" alt="Perfil github" class="icon" onclick="location.href='https://github.com/GuilhermeSegattoo'">
                 </div>
             </div>
+    </section>
+    <section id="Sobre">
+        <p class="texto-p1">Saiba mais</p>
+        <h1 class="titulo">Sobre mim!</h1>
+        <div class="section-container">
+            <div class="section-container_profile">
+                <img src="./imgs/ProfileFoto.svg" alt="Foto de Perfil" class="sobreFoto">
+            </div>
+            <div class="sobre-container-detalhes">
+                <div class="sobre-container">
+                    <div class="detalhes-container">
+                        <img src="./imgs/SocialImg/experience.png" alt="icon de experiencia" class="icon">
+                        <h3>Experiência</h3>
+                        <p>+1 Ano <br>Desenvolvendo WebSites</p>
+                    </div>
+                    <div class="detalhes-container">
+                        <img src="./imgs/SocialImg/education.png" alt="icon" class="icon">
+                        <h3>Formação:</h3>
+                        <h5>IESB</h5>
+                        <h4>Cursando 3º Semestre</h4>
+                        <p>Análise e Desenvolvimento de Sistemas</p>
+                    </div>
+                </div>
+                <div class="texto-container">
+                    <p>Atualmente estou cursando o 3º semestre de Análise e Desenvolvimento de Sistemas no Instituto de Ensino Superior de Brasília( IESB ). Meu objetivo é me tornar um desenvolvedor Full-Stack ao concluir minha graduação, busco uma posição desafiadora na área de Desenvolvimento de Software/ Websites e aberto a novas experiências e desafios que me ajudem a crescer e aprimorar minhas habilidades técnicas.<br> Apesar de estar no início da minha carreira, estou determinado a demonstrar minha dedicação sempre.</p>
+                </div>
+            </div>
+        </div>
+        
     </section>
     <script src="script.js"></script>
 </body>

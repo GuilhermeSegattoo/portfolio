@@ -194,7 +194,7 @@ section{
   
   .icon {
     cursor: pointer;
-    height: 2rem;
+    height: 4rem;
     margin-top: 1rem;
     
   }
@@ -246,3 +246,50 @@ section{
   #btn-container {
     gap: 1rem;
   }
+
+  /* sobre section */
+
+  #sobre{
+    position: relative;
+  }
+
+  .sobre-container{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .sobre-container-detalhes{
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .sobre-container, .sobre-container-detalhes{
+    display: flex;
+    
+  }
+
+  .sobreFoto{
+    border-radius: 2rem;
+  }
+
+  .detalhes-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: rgb(255, 255, 255);
+    border-radius: 2rem;
+    border:rgb(53,53,53) 0.1rem solid ;
+    border-color: rgb(9, 2, 69);
+    text-align: center;
+    margin-top: 0%;
+  }
+
+  .section-container{
+    gap: 4rem;
+    height: 80%;
+  }
+
+ .section-container-profile{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+ }
