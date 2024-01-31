@@ -6,8 +6,8 @@ Rápida descrição do objetivo de fazer esse projeto é para colocar em prátic
 | -------------  | --- |
 | :sparkles: Nome        | **Portfolio**
 | :label: Tecnologias | javascript, html, css (tecnologias utilizadas)
-| :rocket: URL         | https://url-deploy.com.br
-| :fire: Desafio     | https://url-do-desafio.com.br
+| :rocket: URL         | https:[//url-deploy.com.br](https://guilhermesegattoo.github.io/portfolio/)
+
 
 
 ## Detalhes do projeto
