@@ -249,97 +249,127 @@ section{
 
   /* sobre section */
 
-  #sobre{
-    position: relative;
-  }
+ #Sobre {
+  position: relative;
+}
 
-  .sobre-container{
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-  .sobre-container-detalhes{
-    justify-content: center;
-    flex-direction: column;
-  }
+.sobre-container {
+  display: flex; /* Tornando este container um flex container */
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.sobre-container-detalhes {
+  display: flex; /* Tornando este container um flex container */
+  flex-direction: column;
+  justify-content: center;
+  flex: 1; /* Permitindo que este container ocupe o espaço disponível */
+}
+
+.detalhes-container {
+  padding: 1.5rem;
+  background: rgb(255, 255, 255);
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(9, 2, 69);
+  text-align: center;
+}
+
+.sobreFoto {
+  border-radius: 2rem;
+  width: 100%; /* Adicionando uma largura para a imagem */
+  max-width: 400px; /* Limitando a largura máxima da imagem */
+}
+
+.section-container {
+  display: flex; /* Tornando este container um flex container */
+  justify-content: center; /* Centralizando os itens */
+  gap: 4rem;
+  height: 80%;
+  align-items: center;
+}
+.texto-container {
+    flex: 1; /* Ocupa o espaço disponível */
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    font-weight: bold; /* Torna o texto mais negrito */
+    color: #333; /* Cor do texto */
+    text-align: justify; /* Alinhamento do texto */
+}
   
-  .sobre-container, .sobre-container-detalhes{
-    display: flex;
-    flex-direction: column-reverse;
-    
-  }
-
-  .sobreFoto{
-    border-radius: 2rem;
-  }
-
-  .detalhes-container{
-    padding: 1.5rem;
-    flex: 1;
-    background: rgb(255, 255, 255);
-    border-radius: 2rem;
-    border:rgb(53,53,53) 0.1rem solid ;
-    border-color: rgb(9, 2, 69);
-    text-align: center;
-    margin-top: 0%;
-  }
-
-  .section-container{
-    gap: 4rem;
-    height: 80%;
-  }
-
- .section-container-profile{
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
- }
 
  /* Experiência Section */
 
- #Experiencia{
+ #Experiencia {
     position: relative;
- }
+}
 
- .experiencias-sub-titulo{
+.experiencias-sub-titulo {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
- }
+    
+}
+.articulos-container a {
+    text-decoration: none; /* Remova a decoração de texto */
+}
 
- .experiencias-detalhes-container{
+.experiencias-detalhes-container {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
- }
- .articulos-container{
+    justify-content: space-between; /* Coloca os elementos nas extremidades */
+    align-items: center; /* Alinha verticalmente os elementos */
+}
+.sobre-container {
+    flex: 1; /* Ocupa o espaço restante */
+    margin-right: 20px; /* Adiciona espaçamento entre a parte do desenvolvedor e a imagem */
+}
+.canva-detalhes {
+    flex-shrink: 0; /* Impede que a imagem diminua para caber no contêiner */
+}
+
+.articulos-container {
     display: flex;
-    text-align: center;
     flex-wrap: wrap;
     gap: 2.5rem;
-    justify-content: space-around;
- }
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    max-width: 800px; /* Define a largura máxima da caixa de botões */
+    margin: 0 auto; /* Centraliza a caixa de botões */
+}
 
- article{
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
- }
+article {
+    position: relative;
+    width: 200px; /* Define a largura dos botões */
+}
 
- article, .icon{
-    cursor: default;
- }
+article a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
 
- .canva-detalhes{
+article a:hover {
+    transform: scale(1.1);
+    border-color: #333;
+    
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px; /* Aumenta o espaçamento inferior dos ícones */
+}
+
+.canva-detalhes {
     display: flex;
     justify-content: center;
     align-self: flex-end;
- }
+}
 
-.canva{
-    width:500px ;
-    height:500px ;
+.canva {
+    width: 500px;
+    height: 500px;
 }

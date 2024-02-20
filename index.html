@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
+
 <body>
     <nav id="desktop-nav">
         <div class="logo">Guilherme Segatto</div>
@@ -33,25 +35,28 @@
                 <li><a href="#Projetos" onclick="toggleMenu()">Projetos</a></li>
                 <li><a href="#Contato" onclick="toggleMenu()">Contato</a></li>
             </div>
-        </div> 
+        </div>
     </nav>
     <section id="perfil">
-            <div class="section-containerLogo">
-                <img src="imgs/Logo.svg/1.svg" alt="Logo Guilherme Segatto Desenvolvedor de Sistemas e Web Sites">
+        <div class="section-containerLogo">
+            <img src="imgs/Logo.svg/1.svg" alt="Logo Guilherme Segatto Desenvolvedor de Sistemas e Web Sites">
+        </div>
+        <div class="section-containerTexto">
+            <p class="texto-p1">Olá, eu sou o</p>
+            <h1 class="titulo">Guilherme!</h1>
+            <p class="texto-p2">Desenvolvedor de Sistemas e Websites.</p>
+            <div class="btn-container">
+                <button id="btn1" onclick="window.open('./imgs/curriculo-guilherme-ferreira-segatto.pdf')">Download
+                    CV</button>
+                <button id="btn2" onclick="location.href='./#contato'">Fale comigo!</button>
             </div>
-            <div class="section-containerTexto">
-                <p class="texto-p1">Olá, eu sou o</p>
-                <h1 class="titulo">Guilherme!</h1>
-                <p class="texto-p2">Desenvolvedor de Sistemas e Websites.</p>
-                <div class="btn-container">
-                    <button id="btn1" onclick="window.open('./imgs/curriculo-guilherme-ferreira-segatto.pdf')">Download CV</button>
-                    <button id="btn2" onclick="location.href='./#contato'">Fale comigo!</button>
-                </div>
-                <div id="social-container">
-                    <img src="./imgs/SocialImg/linkedin.png" alt="Perfil linkedin" class="icon" onclick="location.href='https://linkedin.com/in/guilhermesegatto'">
-                    <img src="./imgs/SocialImg/github.png" alt="Perfil github" class="icon" onclick="location.href='https://github.com/GuilhermeSegattoo'">
-                </div>
+            <div id="social-container">
+                <img src="./imgs/SocialImg/linkedin.png" alt="Perfil linkedin" class="icon"
+                    onclick="location.href='https://linkedin.com/in/guilhermesegatto'">
+                <img src="./imgs/SocialImg/github.png" alt="Perfil github" class="icon"
+                    onclick="location.href='https://github.com/GuilhermeSegattoo'">
             </div>
+        </div>
     </section>
     <section id="Sobre">
         <p class="texto-p1">Saiba mais</p>
@@ -62,6 +67,13 @@
             </div>
             <div class="sobre-container-detalhes">
                 <div class="sobre-container">
+                    <div class="texto-container">
+                        <p>Atualmente estou cursando o 3º semestre de Análise e Desenvolvimento de Sistemas no Instituto
+                            de Ensino Superior de Brasília( IESB ).<br> Meu objetivo é me tornar um desenvolvedor
+                            Full-Stack ao concluir minha graduação, busco uma posição desafiadora na área de
+                            Desenvolvimento de Software/ Websites e aberto a novas experiências e desafios que me ajudem
+                            a crescer e aprimorar minhas habilidades técnicas.</p>
+                    </div>
                     <div class="detalhes-container">
                         <img src="./imgs/SocialImg/experience.png" alt="icon de experiencia" class="icon">
                         <h3>Experiência</h3>
@@ -69,78 +81,90 @@
                     </div>
                     <div class="detalhes-container">
                         <img src="./imgs/SocialImg/education.png" alt="icon" class="icon">
-                        <h3>Formação:</h3>
+                        <h3>Formação</h3>
                         <h5>IESB</h5>
                         <h4>Cursando 3º Semestre</h4>
                         <p>Análise e Desenvolvimento de Sistemas</p>
                     </div>
-                    <div class="texto-container">
-                        <p>Atualmente estou cursando o 3º semestre de Análise e Desenvolvimento de Sistemas no Instituto de Ensino Superior de Brasília( IESB ).<br> Meu objetivo é me tornar um desenvolvedor Full-Stack ao concluir minha graduação, busco uma posição desafiadora na área de Desenvolvimento de Software/ Websites e aberto a novas experiências e desafios que me ajudem a crescer e aprimorar minhas habilidades técnicas.</p>
-                    </div>
                 </div>
             </div>
         </div>
-        
-    </section>
-    <section id="Experiencia">
-        <p class="texto-p1">Minhas Habilidades</p>
-        <h1 class="titulo">Experiências</h1>
-        <div class="experiecias-detalhes-container">
-            <div class="sobre-container">
-                <div class="detalhes-container">
-                    <h2 class="experiencias-sub-titulo">Desenvolvedor Front-End</h2>
-                    <div class="articulos-container">
-                        <article>
+
+   <section id="Experiencia">
+    <p class="texto-p1">Minhas Habilidades</p>
+    <h1 class="titulo">Experiências</h1>
+    <div class="experiencias-detalhes-container">
+        <div class="sobre-container">
+            <div class="detalhes-container">
+                <h2 class="experiencias-sub-titulo">Desenvolvedor Front-End</h2>
+                <div class="articulos-container">
+                    <article>
+                        <a href="#certificados"> <!-- Adicione o link para a seção de certificados -->
                             <img src="./imgs/icon-ex/css.png" alt="experiencia-icon" class="icon">
                             <div>
                                 <p>Experiência:</p>
                                 <h3>CSS</h3>
                             </div>
-                        </article>
-                        <article>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#certificados"> <!-- Adicione o link para a seção de certificados -->
                             <img src="./imgs/icon-ex/html.png" alt="experiencia-icon" class="icon">
                             <div>
                                 <p>Experiência:</p>
                                 <h3>HTML</h3>
                             </div>
-                        </article>
-                        <article>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#certificados"> <!-- Adicione o link para a seção de certificados -->
                             <img src="./imgs/icon-ex/javascript.png" alt="experiencia-icon" class="icon">
                             <div>
                                 <p>Experiência:</p>
                                 <h3>JavaScript</h3>
                             </div>
-                        </article>
-                        <article>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#certificados"> <!-- Adicione o link para a seção de certificados -->
                             <img src="./imgs/icon-ex/arquivo-sql.png" alt="experiencia-icon" class="icon">
                             <div>
                                 <p>Experiência:</p>
                                 <h3>SQL Workbench</h3>
                             </div>
-                        </article>
-                        <article>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#certificados"> <!-- Adicione o link para a seção de certificados -->
                             <img src="./imgs/icon-ex/react.png" alt="experiencia-icon" class="icon">
                             <div>
                                 <p>Experiência:</p>
                                 <h3>React</h3>
                             </div>
-                        </article>
-                        <article>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#certificados"> <!-- Adicione o link para a seção de certificados -->
                             <img src="./imgs/icon-ex/github.svg" alt="experiencia-icon" class="icon">
                             <div>
                                 <p>Experiência:</p>
                                 <h3>Git</h3>
                             </div>
-                        </article>
-                    </div>
+                        </a>
+                    </article>
+                    <!-- Adicione mais artigos conforme necessário -->
                 </div>
             </div>
         </div>
         <div class="canva-detalhes">
             <img src="./imgs/Logo.svg/3.svg" alt="desenho notebook" class="canva">
         </div>
-    </section>
-    <h1>Em Construção!</h1>
+    </div>
+    <div class="canva-detalhes">
+        <h1>Em Construção...</h1>
+    </div>
+</section>
     <script src="script.js"></script>
 </body>
+
 </html>
