@@ -381,3 +381,58 @@ article a:hover {
     width: 50%;
     height: 500px;
 }
+
+
+/*Projetos Section*/
+
+.Projetos{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center; 
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .slide {
+    display: none;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Adicionando espaço entre a imagem e o botão */
+  }
+  
+  .deploy-button {
+    display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color:  rgb(4, 1, 90);
+  padding: 5px 15px; /* Ajuste o padding conforme necessário */
+  border-radius: 5px;
+  }
+  
+  .navigation {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    background-color: rgb(4, 1, 90);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 20px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #b9b9b9;
+  }
