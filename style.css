@@ -56,8 +56,17 @@ a:hover {
     text-decoration-color: darkblue;
 }
 
+.logo-container {
+    width: 50%;
+    max-width: 200px; /* Defina o valor máximo desejado */
+    margin-top: 20px; /* Adicione espaçamento superior */
+    margin-bottom: 20px; /* Adicione espaçamento inferior */
+    overflow: hidden; /* Evita que a logo seja cortada na parte superior */
+}
+
 .logo {
-    font-size: 1.8rem;
+    width: 100%;
+    height: auto; /* Para manter a proporção */
 }
 .logo:hover {
     cursor: default;
@@ -153,42 +162,46 @@ section{
 
 /* Perfil */
 
-#perfil{
+#perfil {
     display: flex;
-    justify-content: center;
-    gap: 5rem;
+    justify-content: space-between; /* Adiciona espaço entre os elementos */
+    align-items: flex-start; /* Alinhar ao topo */
     height: 80vh;
+    padding-left: 5%; /* Adiciona um espaço à esquerda */
+    padding-top: 10vh; /* Adiciona um espaço superior */
 }
 
-.section-containerLogo{
-    display: flex;
+.section-containerTexto {
+    text-align: left;
+    max-width: 45%; /* Reduzindo um pouco a largura do texto */
 }
 
-.section-containerTexto{
-    align-self: center;
-    text-align: center;
+.titulo {
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Adiciona um espaço entre o título e o parágrafo */
 }
-.section-containerTexto p {
-    font-weight: 600;
-}
-.texto-p1{
-    text-align: center;
-}
-.texto-p2{
+
+.texto-p2 {
     font-size: 1.75rem;
-    margin-bottom: 1rem;
-}
-.titulo{
-    font-size: 3rem;
-    text-align: center;
+    margin-bottom: 20px; /* Adiciona um espaço entre os parágrafos */
 }
 
-#socials-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    gap: 1rem;
-  }
+.img-pc {
+    width: 45%; /* Definindo a largura da div da imagem */
+    display: flex; /* Adiciona display: flex para os elementos internos */
+    justify-content: flex-end; /* Alinha a imagem à direita */
+    align-items: flex-end; /* Alinha a imagem na parte inferior */
+}
+
+.img-pc img {
+    width: 100%;
+    transition: transform 0.3s ease; /* Adicionando transição para suavizar o efeito */
+}
+
+.img-pc img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem quando o mouse passa por cima */
+}
+
   
   /* ICONS */
   
@@ -203,15 +216,15 @@ section{
   
   .btn-container {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: start;
+    gap: 2rem;
   }
 
   button {
-    font-weight: 600;
+    font-weight: 500;
     transition: all 300ms ease;
     padding: 1rem;
-    width: 8rem;
+    width: 15rem;
     border-radius: 2rem;
   }
   
@@ -248,94 +261,88 @@ section{
   }
 
   /* sobre section */
-
- #Sobre {
-  position: relative;
+  #Sobre {
+    text-align: center; /* Centraliza o conteúdo */
+    width: 80%; /* Define a largura da seção */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
-.sobre-container {
-  display: flex; /* Tornando este container um flex container */
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.sobre-container-detalhes {
-  display: flex; /* Tornando este container um flex container */
-  flex-direction: column;
-  justify-content: center;
-  flex: 1; /* Permitindo que este container ocupe o espaço disponível */
-}
-
-.detalhes-container {
-  padding: 1.5rem;
-  background: rgb(255, 255, 255);
-  border-radius: 2rem;
-  border: 0.1rem solid rgb(9, 2, 69);
-  text-align: center;
-}
-
-.sobreFoto {
-  border-radius: 2rem;
-  width: 100%; /* Adicionando uma largura para a imagem */
-  max-width: 400px; /* Limitando a largura máxima da imagem */
+.titulo {
+    margin-bottom: 20px; /* Espaço entre o título e o retângulo */
 }
 
 .section-container {
-  display: flex; /* Tornando este container um flex container */
-  justify-content: center; /* Centralizando os itens */
-  gap: 4rem;
-  height: 80%;
-  align-items: center;
+    display: flex;
+    border: 1px solid #444; /* Bordas cinza escuro */
+    border-radius: 1rem;
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f0f0f0; /* Fundo cinza claro */
 }
-.texto-container {
-    flex: 1; /* Ocupa o espaço disponível */
-    font-size: 1rem; /* Ajusta o tamanho da fonte */
-    font-weight: bold; /* Torna o texto mais negrito */
-    color: #333; /* Cor do texto */
-    text-align: justify; /* Alinhamento do texto */
+
+.section-container_profile {
+    width: 50%; /* Largura do lado esquerdo */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem verticalmente */
+    align-items: center; /* Centraliza a imagem horizontalmente */
 }
-  
+
+.profile-wrapper {
+    width: 80%; /* Largura da imagem */
+}
+
+.sobreFoto {
+    border-radius: 1rem;
+    width: 100%; /* Largura da imagem */
+    max-width: 100%; /* Largura máxima da imagem */
+}
+
+.sobre-container-detalhes {
+    width: 50%; /* Largura do lado direito */
+    padding-left: 20px; /* Adiciona espaço à esquerda */
+}
+
+.texto-container p {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do texto */
+}
+
+.social-container {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+}
+
+.icon {
+    width: 50px; /* Define a largura dos ícones */
+    margin: 0 10px; /* Adiciona espaço entre os ícones */
+}
+
 
  /* Experiência Section */
-
  #Experiencia {
     position: relative;
-}
-
-.experiencias-sub-titulo {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-    
-}
-.articulos-container a {
-    text-decoration: none; /* Remova a decoração de texto */
+    text-align: center; /* Centraliza o conteúdo */
 }
 
 .experiencias-detalhes-container {
     display: flex;
-    justify-content: space-between; /* Coloca os elementos nas extremidades */
-    align-items: center; /* Alinha verticalmente os elementos */
+    flex-direction: column; /* Altera a direção do layout para vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os contêineres */
 }
+
 .sobre-container {
-    flex: 1; /* Ocupa o espaço restante */
-    margin-right: 20px; /* Adiciona espaçamento entre a parte do desenvolvedor e a imagem */
-}
-.canva-detalhes {
-    flex-shrink: 0; /* Impede que a imagem diminua para caber no contêiner */
+    max-width: 800px; /* Largura máxima do contêiner */
+    text-align: center; /* Centraliza o conteúdo */
 }
 
 .articulos-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    justify-content: center; /* Centraliza os botões horizontalmente */
-    max-width: 800px; /* Define a largura máxima da caixa de botões */
-    margin: 0 auto; /* Centraliza a caixa de botões */
+    flex-wrap: wrap; /* Permite que os itens sejam quebrados em várias linhas */
+    gap: 20px; /* Espaçamento entre os artigos */
+    justify-content: center; /* Centraliza os artigos horizontalmente */
 }
-
 article {
     position: relative;
     width: 200px; /* Define a largura dos botões */
@@ -361,6 +368,7 @@ article a:hover {
     width: 50px;
     height: 50px;
     margin-bottom: 10px; /* Aumenta o espaçamento inferior dos ícones */
+    margin-top: 20px;
 }
 
 .canva-detalhes {
@@ -370,6 +378,6 @@ article a:hover {
 }
 
 .canva {
-    width: 500px;
+    width: 50%;
     height: 500px;
 }
