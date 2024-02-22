@@ -1,4 +1,4 @@
-# Portfolio Guilherme Segatto Versão 1.0
+# Portfolio Guilherme Segatto Versão 2.0
 
 Rápida descrição do objetivo de fazer esse projeto é para colocar em prática todo meu conhecimento e pesquisa para melhorar minhas habilidades com o tempo. 
 
