@@ -6,9 +6,7 @@
      #nav-hamburguer{
         display: flex;
      }
-     #perfil{
-      
-     }
+    
      .texto-p2{
       font-size: 1.3rem;
      }
@@ -17,7 +15,7 @@
      }
 }
 /* Estilos para celular */
-@media only screen and (max-width: 767px) {
+@media  screen and (max-width: 768px) {
    #desktop-nav {
       display: none;
    }
@@ -27,6 +25,18 @@
       align-items: center;
       padding: 10px; /* Adicione um padding para o menu */
    }
+   .logo-container {
+      width: 50%;
+      max-width: 200px; /* Defina o valor máximo desejado */
+      margin-top: 20px; /* Adicione espaçamento superior */
+      margin-bottom: 20px; /* Adicione espaçamento inferior */
+      overflow: hidden; /* Evita que a logo seja cortada na parte superior */
+  }
+  
+  .logo {
+      width: 100%;
+      height: auto; /* Para manter a proporção */
+  }
    .titulo {
       margin-top: 20px; /* Adapte conforme necessário */
       margin-bottom: 10px; /* Adapte conforme necessário */
@@ -44,6 +54,14 @@
    .btn-container {
       text-align: center; /* Centralize os botões */
    }
+   button {
+      margin-top: 20px;
+      font-weight: 500;
+      transition: all 300ms ease;
+      padding: 1rem;
+      width: 15rem;
+      border-radius: 2rem;
+  }
    .img-pc {
       display: none;
    }
