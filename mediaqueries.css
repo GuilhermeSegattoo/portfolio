@@ -1,8 +1,91 @@
-@media  screen and (max-width: 1024px) {
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
      #desktop-nav{
         display: none;
      }
      #nav-hamburguer{
         display: flex;
      }
+     #perfil{
+      
+     }
+     .texto-p2{
+      font-size: 1.3rem;
+     }
+     .titulo{
+      white-space: nowrap;
+     }
+}
+/* Estilos para celular */
+@media only screen and (max-width: 767px) {
+   #desktop-nav {
+      display: none;
+   }
+   #nav-hamburguer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px; /* Adicione um padding para o menu */
+   }
+   .titulo {
+      margin-top: 20px; /* Adapte conforme necessário */
+      margin-bottom: 10px; /* Adapte conforme necessário */
+      text-align: center; /* Centralize o título */
+   }
+   .texto-p2 {
+      padding: 0 10px;
+      font-size: 1.5rem;
+      text-align: center;
+  }
+  .section-containerTexto {
+   text-align: center;
+   max-width: 75%;
+}
+   .btn-container {
+      text-align: center; /* Centralize os botões */
+   }
+   .img-pc {
+      display: none;
+   }
+   #perfil {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+      flex-direction: column;
+  }
+  .btn-container {
+   display: flex;
+   justify-content: space-around;
+   gap: 1rem;
+   flex-direction: column;
+   align-items: center;
+}
+#Sobre {
+   text-align: center;
+   width: 93%;
+   height: auto;
+   margin: 0 auto;
+}
+.section-container {
+   display: flex;
+   border: 2px solid rgb(4, 1, 90);
+   border-radius: 2rem;
+   padding: 20px;
+   background-color: #ffffff;
+   flex-direction: column;
+   align-items: center;
+}
+.section-container_profile {
+   width: -webkit-fill-available;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.texto-container p {
+   font-size: 1.5rem;
+   color: rgb(13, 17, 83);
+   text-align: -webkit-center;
+   margin-bottom: 20px;
+}
 }
