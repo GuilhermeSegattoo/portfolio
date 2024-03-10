@@ -1,3 +1,21 @@
+/* notebook */
+
+@media only screen and (max-width: 1200px) {
+   /* Adicione aqui os estilos específicos para telas menores */
+   body {
+       margin: 0 auto;
+       padding: 0 20px; /* Adiciona um espaço lateral */
+   }
+
+   .projetos-coluna {
+       width: 80%; /* Altera a largura para ocupar toda a largura da tela */
+       display: block; /* Altera a exibição para bloco */
+       margin-bottom: 40px; /* Adiciona espaço entre as colunas */
+   }
+}
+
+
+
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
      #desktop-nav{
