@@ -3,9 +3,13 @@
 Rápida descrição do objetivo de fazer esse projeto é para colocar em prática todo meu conhecimento e pesquisa para melhorar minhas habilidades com o tempo. 
 
 
-| -------------  | --- |
+
+
+
 | :sparkles: Nome        | **Portfolio**
-| :label: Tecnologias | javascript, html, css (tecnologias utilizadas)
+
+| :label: Tecnologias |  javascript, html, css.
+
 | :rocket: URL         | https:[//url-deploy.com.br](https://guilhermesegattoo.github.io/portfolio/)
 
 
