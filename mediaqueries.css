@@ -1,6 +1,6 @@
 /* notebook */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
    /* Adicione aqui os estilos específicos para telas menores */
    body {
        margin: 0 auto;
@@ -14,24 +14,6 @@
    }
 }
 
-
-
-/* tablet */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-     #desktop-nav{
-        display: none;
-     }
-     #nav-hamburguer{
-        display: flex;
-     }
-    
-     .texto-p2{
-      font-size: 1.3rem;
-     }
-     .titulo{
-      white-space: nowrap;
-     }
-}
 /* Estilos para celular */
 @media  screen and (max-width: 768px) {
    #desktop-nav {

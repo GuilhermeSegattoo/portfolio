@@ -65,7 +65,7 @@ a:hover {
 }
 
 .logo {
-    width: 100%;
+    width: 50%;
     height: auto; /* Para manter a proporção */
 }
 .logo:hover {
@@ -276,7 +276,7 @@ section{
     border: 1px solid #444; /* Bordas cinza escuro */
     border-radius: 1rem;
     padding: 20px; /* Espaçamento interno */
-    background-color: #f0f0f0; /* Fundo cinza claro */
+    
 }
 
 .section-container_profile {
@@ -294,6 +294,7 @@ section{
     border-radius: 1rem;
     width: 100%; /* Largura da imagem */
     max-width: 100%; /* Largura máxima da imagem */
+    box-shadow: 5px 20px 40px rgba(2, 7, 41, 0.5);
 }
 
 .sobre-container-detalhes {
@@ -303,7 +304,7 @@ section{
 
 .texto-container p {
     font-size: 1.1rem;
-    color: #333;
+    color:rgb(4, 1, 90);
     text-align: left; /* Alinha o texto à esquerda */
     margin-bottom: 20px; /* Adiciona espaço abaixo do texto */
 }
@@ -327,9 +328,10 @@ section{
 
 .experiencias-detalhes-container {
     display: flex;
-    flex-direction: column; /* Altera a direção do layout para vertical */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    gap: 20px; /* Espaçamento entre os contêineres */
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: space-around;
 }
 
 .sobre-container {
@@ -381,6 +383,15 @@ article a:hover {
     width: 50%;
     height: 500px;
 }
+
+.coluna {
+    width: 50%; /* Divide o espaço em duas colunas */
+    float: left; /* Faz com que as colunas fiquem lado a lado */
+}
+.empregos {
+    clear: both; /* Limpa a flutuação para evitar sobreposição */
+}
+
 
 
 /*Projetos Section*/
