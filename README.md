@@ -10,7 +10,7 @@ Rápida descrição do objetivo de fazer esse projeto é para colocar em prátic
 
 | :label: Tecnologias |  javascript, html, css.
 
-| :rocket: URL         | https:[//url-deploy.com.br]([(https://portfolio-guilherme-segattos-projects.vercel.app)])
+| :rocket: URL         | https:[//url-deploy.com.br](https://portfolio-guilherme-segattos-projects.vercel.app)
 
 
 
