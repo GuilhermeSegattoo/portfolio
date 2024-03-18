@@ -30,3 +30,6 @@ function prevSlide() {
 function nextSlide() {
   changeSlide(1);
 }
+
+
+// slide bar projetos
